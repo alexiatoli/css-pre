@@ -1,0 +1,71 @@
+// Define color variables
+@red-color: red;
+@blue-color: blue;
+@green-color: green;
+@purple-color: purple;
+
+// Main styles
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; // Light gray background
+}
+
+// Navigation styles
+nav {
+    background-color: #333; // Dark background for nav
+    color: white;
+    padding: 15px;
+    text-align: center; // Center text in nav
+}
+
+// Container for boxes
+.container {
+    display: flex; // Use flexbox for layout
+    justify-content: space-around; // Space boxes evenly
+    padding: 20px;
+}
+
+// Box styles
+.box {
+    border-radius: 8px;
+    border: solid black 2px;
+    color: white;
+    display: flex; // Center text inside the box
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 100px; // Set a default width
+}
+
+// Specific box styles with height and colors
+.red {
+    background-color: @red-color;
+    height: 100px;
+}
+
+.blue {
+    background-color: @blue-color;
+    height: 200px;
+}
+
+.green {
+    background-color: @green-color;
+    height: 250px;
+}
+
+.purple {
+    background-color: @purple-color;
+    height: 50px;
+}
+
+// Footer styles
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333; // Match nav color
+    color: white;
+    position: fixed;
+    bottom: 0; // Fix footer at the bottom
+    width: 100%; // Full width
+}
